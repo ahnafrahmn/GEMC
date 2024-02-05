@@ -26,8 +26,9 @@ body,
 }
 .mid-line {
   width: 70vw;
-  height: 0.1px;
+  height: 0.01vw;
   border: 0.5px solid black;
+  background-color: black;
   margin: 1vh;
 }
 .scrollToTopBtn {
@@ -169,7 +170,9 @@ body,
 }
 .servicesBtn > .item > .ans {
   height: 0;
-  border: 0.25px solid rgba(0, 0, 0, 0.1);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-bottom: 0.25px solid rgba(0, 0, 0, 0.1);
   transition: height 1.5s ease-out;
   overflow: hidden;
 }
@@ -277,15 +280,15 @@ body,
 
   .menu-icon {
     width: 5vw;
-    height: 3vw;
+    height: 4vw;
     flex-direction: column;
     justify-content: space-between;
   }
   .menu-icon > .bar {
     width: 5vw;
-    height: 0.3vw;
-    border-radius: 20px;
-    background-color: rgb(151, 151, 151);
+    height: 0.5vw;
+    border: 0.1vw solid rgba(255, 255, 255, 0.5);
+    background-color: rgb(1, 51, 101);
   }
 
   .navbar {
@@ -327,45 +330,48 @@ body,
     flex-direction: column;
   }
   .workServicePage > .container {
-    width: 80vw;
-    font-size: 1.2vw;
-    line-height: 1.8vw;
+    width: 90vw;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .servicesBtn > h2{
+    font-size: 3vw;
   }
   .workServicePage > .container > ol {
-    font-size: 1.1vw;
-    line-height: 2vw;
+    font-size: 3vw;
+    line-height: 4vw;
     margin-bottom: 5vw;
   }
   .workServicePage > h1 {
     color: rgb(69, 69, 197);
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 0;
   }
   .workServicePage > h2 {
     margin: 0;
     margin-bottom: 3vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .workServicePage > .servicesBtn {
-    width: 80vw;
+    width: 90vw;
     height: auto;
     padding: 0;
     border-radius: 7px;
-    margin-bottom: 3vw;
+    margin-bottom: 10vw;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
   .servicesBtn > .item > .heading {
     justify-content: space-between;
     cursor: pointer;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    height: 4vw;
-    font-size: 1.5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 7vw;
+    font-size: 3vw;
     border-bottom: 0.25px solid rgba(0, 0, 0, 0.1);
   }
   .servicesBtn > .item > .heading > svg {
-    width: 1.2vw;
+    width: 2vw;
     cursor: pointer;
     transition: transform 0.2s ease-in;
   }
@@ -374,14 +380,17 @@ body,
   }
   .servicesBtn > .item > .ans {
     height: 0;
-    border: 0.25px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
   .servicesBtn > .item.active > .ans {
     height: auto;
-    padding: 1vw;
-    font-size: 1.5vw;
-    line-height: 2vw;
+    padding: 2vw;
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+  #last-container{
+    padding-bottom: 10vw;
   }
 
 

@@ -9,14 +9,16 @@ body,
 }
 .mid-line {
   width: 70vw;
-  height: 0.1px;
+  height: 0.01vw;
   border: 0.5px solid black;
   margin: 1vh;
+  background-color: black;
 }
 .small-line {
   width: 30vw;
-  height: 0.1px;
+  height: 0.01vw;
   border: 0.5px solid black;
+  background-color: black;
   margin: 1vh;
 }
 
@@ -182,6 +184,9 @@ body,
 .work {
   flex-direction: column;
 }
+.work > h1{
+  font-size: 3vw;
+}
 .work-items-section {
   flex-direction: row;
   justify-content: space-evenly;
@@ -208,11 +213,10 @@ body,
   border-radius: 5px;
   background-color: #0d6efd;
   transition: 0.2s all ease;
+  cursor: pointer;
 }
 .work-item-btn:hover {
   font-size: 1.25vw;
-  border: 1px solid blue;
-  border-radius: 5px;
   background-color: #0b5ed7;
 }
 /* =============================================================== */
@@ -410,15 +414,15 @@ body,
 
   .menu-icon {
     width: 5vw;
-    height: 3vw;
+    height: 4vw;
     flex-direction: column;
     justify-content: space-between;
   }
   .menu-icon > .bar {
     width: 5vw;
-    height: 0.3vw;
-    border-radius: 20px;
-    background-color: rgb(151, 151, 151);
+    height: 0.5vw;
+    border: 0.1vw solid rgba(255, 255, 255, 0.5);
+    background-color: rgb(1, 51, 101);
   }
 
   .navbar {
@@ -477,9 +481,13 @@ body,
   .next-btn {
     right: 2vw;
   }
-
+  
   /* =============================================================== */
-
+  
+  .work > h1{
+    font-size: 3.5vw;
+    margin-bottom: 10vw;
+  }
   .work-items-section {
     flex-direction: column;
     justify-content: space-evenly;
@@ -487,26 +495,24 @@ body,
   }
   .work-item {
     width: 90vw;
-    flex-direction: column;
   }
   .work-item > img {
-    margin-top: 10vw;
-    width: 50px;
+    width: 20vw;
   }
   .work-text-heading{
     font-size: 4vw;
   }
   .work-item > p {
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
   .work-item-btn {
-    width: 15vw;
-    height: 4vw;
-    font-size: 1.5vw;
+    width: 25vw;
+    height: 5.5vw;
+    font-size: 3vw;
+    margin-bottom: 20vw;
   }
   .work-item-btn:hover {
-    font-size: 1.8vw;
-    border: 1px solid blue;
+    font-size: 3vw;
   }
   /* =============================================================== */
 
@@ -523,8 +529,8 @@ body,
     width: 85vw;
   }
   .about-text > p {
-    font-size: 1.5vw;
-    line-height: 1.5vh;
+    font-size: 3vw;
+    line-height: 4vw;
   }
 
   /* =============================================================== */
@@ -538,19 +544,33 @@ body,
     width: 80vw;
     height: auto;
   }
+  .speciality > .text > h1 {
+    font-size: 6vw;
+  }
   .text > p {
-    font-size: 1.5vw;
+    font-size: 2.6vw;
+    line-height: 3.5vw;
   }
   .text > .big-text {
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   /* =============================================================== */
 
-  .slides-of-university {
-    width: 100vw;
-    height: 15vw;
-  }
+  
+.slides-of-university {
+  width: 98vw;
+  height: 70vw;
+  overflow: hidden;
+  padding-left: 2vw;
+}
+.slides-of-university > img {
+  width: 100vw;
+  height: auto;
+  margin-right: 15vh;
+  animation: moveRightToLeft 20s linear infinite;
+  z-index: -1;
+}
 
   /* =============================================================== */
 
